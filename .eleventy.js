@@ -13,11 +13,11 @@ module.exports = function(eleventyConfig) {
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("styles");
 
-  eleventyConfig.addCollection("tests", function(collectionApi) {
+  eleventyConfig.addCollection("test", function(collectionApi) {
     return collectionApi.getFilteredByTag("test");
   });
 
-  eleventyConfig.addCollection("stories", function(collectionApi) {
+  eleventyConfig.addCollection("story", function(collectionApi) {
     return collectionApi.getFilteredByTag("story");
   });
 
