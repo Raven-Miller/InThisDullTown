@@ -18,7 +18,7 @@ layout: base.njk
     <h2>tests</h2>
     <div class="story-grid">
       {% for story in collections.test %}
-        <a href="{{ story.url }}" class="story-card">
+        <a href="{{ story.url | url }}" class="story-card">
           <h3>{{ story.data.title }}</h3>
           <p>{{ story.data.description }}</p>
         </a>
@@ -26,10 +26,11 @@ layout: base.njk
     </div>
 
     <h2>Stories</h2>
+
     <p>Total stories: {{ collections.story | length }}</p>
 
     {% for story in collections.story %}
-        <a href="{{ story.url }}" class="story-card">
+        <a href="{{ story.url | url }}" class="story-card">
           <h3>{{ story.data.title }}</h3>
           <p>{{ story.data.description }}</p>
         </a>
