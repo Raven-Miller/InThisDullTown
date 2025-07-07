@@ -29,3 +29,13 @@ module.exports = function(eleventyConfig) {
     }
   };
 };
+
+module.exports = function(eleventyConfig) {
+  return {
+    pathPrefix: "/InThisDullTown/",
+    dir: {
+      input: ".",
+      output: "_site"
+    }
+  };
+};
