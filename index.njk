@@ -1,0 +1,38 @@
+---
+title: "Main Archive"
+layout: base.njk
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>In This Dull Town</title>
+</head>
+<body>
+    <h1>Hi! This is the main page.</h1>
+    
+    <main>
+    <h2>tests</h2>
+    <div class="story-grid">
+      {% for story in collections.tests %}
+        <a href="{{ story.url }}" class="story-card">
+          <h3>{{ story.data.title }}</h3>
+          <p>{{ story.data.description }}</p>
+        </a>
+      {% endfor %}
+    </div>
+    
+    <h2>Stories</h2>
+    {% for story in collections.stories %}
+        <a href="{{ story.url }}" class="story-card">
+          <h3>{{ story.data.title }}</h3>
+          <p>{{ story.data.description }}</p>
+        </a>
+      {% endfor %}
+  </main>
+
+</body>
+</html>
