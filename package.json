@@ -1,0 +1,23 @@
+{
+  "name": "inthisdulltown",
+  "version": "1.0.0",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raven-Miller/InThisDullTown.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raven-Miller/InThisDullTown/issues"
+  },
+  "homepage": "https://github.com/Raven-Miller/InThisDullTown#readme",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
