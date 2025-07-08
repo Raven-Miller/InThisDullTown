@@ -24,14 +24,11 @@
       "title: \"$1\"",
       "layout: base.njk",
       "tags: [\"story\"]",
+    
+
       "---"
     ],
     "description": "Front matter and heading for a new story"
   },
-  "test": {
-    "scope": "markdown",
-    "prefix": "test",
-    "body": "snippet",
-    "description": "description"
-  },
+  
 }
