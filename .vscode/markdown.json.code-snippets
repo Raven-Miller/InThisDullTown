@@ -24,8 +24,7 @@
       "title: \"$1\"",
       "layout: base.njk",
       "tags: [\"story\"]",
-    
-
+      "permalink: \"stories/{{ title | slug }}/\"",
       "---"
     ],
     "description": "Front matter and heading for a new story"
