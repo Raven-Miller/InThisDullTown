@@ -39,16 +39,6 @@ module.exports = function(eleventyConfig) {
     }
   };
 };
-// Images
-{
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("Images/favicon.png");}
-
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("Images/bigfav.png");}
-
-  module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("Images/smallfav.png");}
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("Images");
@@ -62,6 +52,5 @@ module.exports = function(eleventyConfig) {
 
     }
   };
-};
 
 
