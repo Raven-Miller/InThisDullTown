@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <title>{{ title }}</title>
-<link rel="stylesheet" href="{{ '/styles/main.css' | url }}">
-<link rel="icon" href="{{ '/Images/favicon.png' | url }}" type="image/x-icon">
+<link rel="stylesheet" href="{{ '/styles/style.css' | url }}">
+<link rel="icon" href="{{ '/Images/favicon.png' | url }}" type="image/x-icon"> 
 </head>
 <body>
-  <main>
+  <main class="markdown">
+    <div class="Post">
     {{ content | safe }}
+    </div>
   </main>
 </body>
 </html>

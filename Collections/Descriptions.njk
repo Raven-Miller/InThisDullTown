@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections - Descriptions</title>
+    <link rel="stylesheet" href="{{ '/styles/style.css' | url }}" />
+    <script src="{{ '/elements/elements.js' | url }}" defer></script>
+    <link
+      rel="icon"
+      href="{{ '/Images/favicon.png' | url }}"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>
+      <div id="siteHeaderPlaceholder"></div>
+
+      <div class="meat">
+        <h1 class="pageTitle">Descriptions</h1>
+        <section class="setting">
+            <p>Total stories: {{ collections.Descriptions | length }}</p>
+          <div class="settingBits" href="{{ story.url | url }}">
+            {% for story in collections.Descriptions %}
+            <div class="storyGrid">
+                <a href="{{ story.url | url }}" class="story-card noStyle">
+                  <h3>{{ story.data.title }}</h3>
+                  <p>{{ story.data.description }}</p>
+                </a>
+            </div>
+            {% endfor %} 
+          </div>
+        </section>
+      </div>
+
+      <div id="footerPlaceholder"></div>
+    </main>
+    <div id="sidebarPlaceholder"></div>
+  </body>
+</html>

@@ -1,53 +1,48 @@
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("styles");
-
-  return {
-    dir: {
-      input: ".",
-      output: "_site",
-      includes: "_includes",
-    },
-  };
-};
-
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("styles");
-
-  eleventyConfig.addCollection("test", function (collectionApi) {
-    return collectionApi.getFilteredByTag("test");
-  });
-
-  eleventyConfig.addCollection("story", function (collectionApi) {
-    return collectionApi.getFilteredByTag("story");
-  });
-
-  return {
-    dir: {
-      input: ".",
-      output: "_site",
-      includes: "_includes",
-    },
-  };
-};
-
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("Images");
 
-return {
-  dir: {
-    input: ".",
-    output: "_site",
-    includes: "_includes",
-  },
-};
-};
+  eleventyConfig.setServerPassthroughCopyBehavior("copy");
+  eleventyConfig.addWatchTarget("styles");
+  eleventyConfig.addPassthroughCopy("styles");
 
-module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("elements");
+
+  eleventyConfig.addCollection("EdithPOV", function (collectionApi) {
+    return collectionApi.getFilteredByTag("Edith");
+  });
+  eleventyConfig.addCollection("MorganPOV", function (collectionApi) {
+    return collectionApi.getFilteredByTag("Morgan");
+  });
+  eleventyConfig.addCollection("JunePOV", function (collectionApi) {
+    return collectionApi.getFilteredByTag("June");
+  });
+  eleventyConfig.addCollection("AlexPOV", function (collectionApi) {
+    return collectionApi.getFilteredByTag("Alex");
+  });
+  eleventyConfig.addCollection("BenPOV", function (collectionApi) {
+    return collectionApi.getFilteredByTag("Ben");
+  });
+
+  eleventyConfig.addCollection("Descriptions", function (collectionApi) {
+    return collectionApi.getFilteredByTag("Des");
+  });
+  eleventyConfig.addCollection("Reports", function (collectionApi) {
+    return collectionApi.getFilteredByTag("Report");
+  });
+
+  eleventyConfig.addCollection("Setting", function (collectionApi) {
+    return collectionApi.getFilteredByTag("Setting");
+  });
+  eleventyConfig.addCollection("MTC", function (collectionApi) {
+    return collectionApi.getFilteredByTag("MTC");
+  });
+
   return {
+    templateFormats: ["html", "njk", "md", "liquid"],
     pathPrefix: "/InThisDullTown/",
     dir: {
       input: ".",
       output: "_site",
     },
   };
-};
+}

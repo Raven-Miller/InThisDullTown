@@ -8,7 +8,7 @@ layout: base.njk
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/style.css">
     <link rel="icon" href="{{ '/Images/favicon.png' | url }}" type="image/x-icon">
 
     <title>In This Dull Town</title>
@@ -18,7 +18,7 @@ layout: base.njk
     
     <main>
     <h2>tests</h2>
-    <div class="story-grid">
+    <div class="story-grid" href="{{ story.url | url }}">
       {% for story in collections.test %}
         <a href="{{ story.url | url }}" class="story-card">
           <h3>{{ story.data.title }}</h3>
