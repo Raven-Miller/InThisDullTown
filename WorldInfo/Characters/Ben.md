@@ -3,6 +3,7 @@ title: "Ben Livington"
 layout: base.njk
 tags: ["MTC"]
 permalink: "WorldInfo/Characters/{{ title | slug }}/"
+order: 5
 ---
 
 # Ben Livington

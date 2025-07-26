@@ -3,6 +3,7 @@ title: "Alex Wright"
 layout: base.njk
 tags: ["MTC"]
 permalink: "WorldInfo/Characters/{{ title | slug }}/"
+order: 4
 ---
 
 # Alex Wright

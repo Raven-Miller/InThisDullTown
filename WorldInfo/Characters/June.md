@@ -3,6 +3,7 @@ title: "June Campbell"
 layout: base.njk
 tags: ["MTC"]
 permalink: "WorldInfo/Characters/{{ title | slug }}/"
+order: 3
 ---
 
 # June Campbell

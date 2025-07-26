@@ -34,7 +34,9 @@ export default function (eleventyConfig) {
     return collectionApi.getFilteredByTag("Setting");
   });
   eleventyConfig.addCollection("MTC", function (collectionApi) {
-    return collectionApi.getFilteredByTag("MTC");
+    return collectionApi.getFilteredByTag("MTC").sort((a, b) => {
+      return (a.data.order ?? 0) - (b.data.order ?? 0);
+    });
   });
 
   return {

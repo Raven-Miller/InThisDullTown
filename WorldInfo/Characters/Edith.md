@@ -3,6 +3,7 @@ title: "Edith Baker"
 layout: base.njk
 tags: ["MTC"]
 permalink: "WorldInfo/Characters/{{ title | slug }}/"
+order: 1
 ---
 
 # Edith Baker

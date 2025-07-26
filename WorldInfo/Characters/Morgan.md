@@ -3,6 +3,7 @@ title: "Morgan Thompson"
 layout: base.njk
 tags: ["MTC"]
 permalink: "WorldInfo/Characters/{{ title | slug }}/"
+order: 2
 ---
 
 # Morgan Thompson
