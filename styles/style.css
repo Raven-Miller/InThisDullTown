@@ -27,6 +27,7 @@ header {
   border-style: solid;
   border-width: 2px;
   background-color: #1a1919;
+  overflow: auto;
 }
 header h1 a {
   padding-left: 10px;
@@ -110,6 +111,7 @@ main {
 }
 .characters {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   justify-content: space-evenly;
 }
@@ -124,10 +126,12 @@ main {
   place-items: center;
   background-color: #151515;
   padding: 40px;
+  overflow: hidden;
 }
 .greeting h2 {
   background-color: #151515;
   padding: 40px;
+  margin: 0;
 }
 .greeting h2:hover .invis {
   color: #509b5b;
@@ -157,6 +161,7 @@ footer {
   margin-left: auto;
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 footer h2 {
   margin-bottom: 0px;
@@ -166,7 +171,6 @@ a {
   padding-right: 30px;
 }
 footer figure {
-  display: flex;
   align-items: center;
   gap: 10px;
 }
@@ -176,6 +180,21 @@ footer a {
 .meat {
   flex: 1;
   padding: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar .navLinks {
+    margin-top: 20px;
+  }
+  .Social {
+    display: block;
+  }
+  header {
+    font-size: small;
+  }
+  .greeting h2 {
+    padding: 15px;
+  }
 }
 
 .project {
