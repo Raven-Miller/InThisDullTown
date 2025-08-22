@@ -1,7 +1,7 @@
 ---
 title: "Character Pain"
 layout: base.njk
-tags: ["report"]
+tags: ["Report"]
 permalink: "stories/Reports/{{ title | slug }}/"
 ---
 
