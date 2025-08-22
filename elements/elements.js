@@ -23,7 +23,10 @@ const highlightActiveSidebarLink = () => {
   const sidebarLinks = document.querySelectorAll(".sidebar .navLinks a");
 
   sidebarLinks.forEach((link) => {
-    if (link.getAttribute("href") === currentFile) {
+    const href = link.getAttribute("href");
+    const currentPath = window.location.pathname;
+
+    if (currentPath.includes(`/inthisdulltown${href}`)) {
       link.classList.add("target");
     }
   });
